@@ -19,5 +19,17 @@ function printPyramid(height) {
 
     // TODO
     // print that pyramid!
+    for (var floor = 0; floor < height; floor++ ) {
+        var spaces = "";
+        var hashes = "";
+        for (var spaceCounter = 0; spaceCounter < height - floor; spaceCounter++) {
+            spaces += " ";
+        }
+        for (var hashCounter = 0; hashCounter < floor + 2; hashCounter++) {
+            hashes += "#";
+        }
+        var thisFloor = spaces + hashes;
+        console.log(thisFloor);
+    }
 
 }
