@@ -35,15 +35,12 @@ function drawPyramid(height) {
         // TODO 1
         // create an element whose inner text is rowStr,
         // and insert it as a child of the container <div id="pyramid">
-        // var rowStrWithBreaks = "<br>" + rowStr + "</br>";
         var pyramid = document.getElementById("pyramid");
         var theRowStr = document.createTextNode(rowStr);
         var aBreak = document.createElement('br');
-        // var br = document.createElement("br");
 
         pyramid.appendChild(aBreak);
         pyramid.appendChild(theRowStr);
-        // document.getElementById("pyramid").appendChild(br);
 
     }
     document.getElementById("pyramid").style.lineHeight = 1;
